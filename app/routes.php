@@ -11,10 +11,10 @@
 |
 */
 
-// Route::get('/', function()
-// {
-// 	return View::make('hello');
-// });
+Route::get('/', function()
+{
+	return View::make('hello');
+});
 
 
 // Route::get('/sayhello/{name}', function($name)
