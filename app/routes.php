@@ -38,24 +38,41 @@ Route::get('/sayhello/{name?}', function($name = 'class')
 
 Route::get('/resume', function()
 {
-    return "this is my resume";
+    return View::make("resume");
 });
 
 Route::get('/portfolio', function()
 {
-    return 'this is my portfolio';
+    return View::make("portfolio");
 });
 
 
 
 Route::get('/rolldice/{guess}', function($guess)
-{   
-    $randomnum = mt_rand(1,6);
+ {   
+     $randomnum = mt_rand(1,6);
 
     if ($guess == $randomnum) {
         return "Your guess is correct!";
-}   else{
+    }else{
         $data = array('randomnum' => $randomnum);
         return View::make("roll-dice")->with($data);
     }
-});
+ });
+            // in class solution
+// Route::get('/rolldice/{guess}', function($guess)
+// {   
+//     $randomnum = mt_rand(1,6);
+
+//     if($guess == $randomnum) {
+//         $message = "you won";
+//     }else{
+//         $message = "you lost";
+//     }
+//     $data = [
+//         'randomnum' =>$randomnum,
+//         'guess' =>$guess,
+//         'message' => $message
+//     ];
+//     return View::make("roll-dice")->with($data);
+// });
