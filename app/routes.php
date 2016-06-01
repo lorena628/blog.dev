@@ -11,7 +11,38 @@
 |
 */
 
-Route::get('/', function()
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+
+
+// Route::get('/sayhello/{name}', function($name)
+// {
+//     if ($name == "Chris") {
+//         return Redirect::to('/');
+//     } else {
+//         return "Hello, $name!";
+//     }
+// });
+
+//will default to class if there is no parameter
+Route::get('/sayhello/{name?}', function($name = 'class')
 {
-	return View::make('hello');
+    if ($name == "Chris") {
+        return Redirect::to('/');
+    } else {
+        return "Hello, $name!";
+    }
 });
+
+Route::get('/resume', function()
+{
+    return "this is my resume";
+});
+
+Route::get('/portfolio', function()
+{
+    return 'this is my portfolio';
+});
+
