@@ -4,7 +4,7 @@
     <title>roll dice</title>
 </head>
 <body>
-<h1>Roll dice again, the number was <?= $randomnum;?></h1>
-
+<h1></h1> 
+<p>roll again, the number was <?= $randomnum;?></p>
 </body>
 </html>
