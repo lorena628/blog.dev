@@ -46,3 +46,16 @@ Route::get('/portfolio', function()
     return 'this is my portfolio';
 });
 
+
+
+Route::get('/rolldice/{guess}', function($guess)
+{   
+    $randomnum = mt_rand(1,6);
+
+    if ($guess == $randomnum) {
+        return "Your guess is correct!";
+}   else{
+        $data = array('randomnum' => $randomnum);
+        return View::make("roll-dice")->with($data);
+    }
+});
