@@ -19,5 +19,28 @@ class HomeController extends BaseController {
 	{
 		return View::make('hello');
 	}
+	public function showResume()
+	{
+		return View::make("resume");
+	}
+	public function showPortfolio()
+	{
+		return View::make("portfolio");
+	}
+	public function showWeathermap()
+	{
+		return View::make("weathermap");
+	}
+	public function showRolldice($guess)
+	{
+		$randomnum = mt_rand(1,6);
+
+	    if ($guess == $randomnum) {
+	        return "Your guess is correct!";
+	    }else{
+	        $data = array('randomnum' => $randomnum);
+	        return View::make("roll-dice")->with($data);
+	    }
+	}
 
 }
