@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return 'all posts created';
+		return View::make("/posts/create");
 	}
 
 
@@ -31,7 +31,7 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		return Redirect::back()->withInput();
 	}
 
 
