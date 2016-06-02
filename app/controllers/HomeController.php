@@ -31,6 +31,7 @@ class HomeController extends BaseController {
 	{
 		return View::make("weathermap");
 	}
+
 	public function showRolldice($guess)
 	{
 		$randomnum = mt_rand(1,6);
@@ -42,5 +43,4 @@ class HomeController extends BaseController {
 	        return View::make("roll-dice")->with($data);
 	    }
 	}
-
 }
