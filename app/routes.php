@@ -21,6 +21,7 @@ Route::get('/weathermap', 'HomeController@showWeathermap');
 
 Route::get('/rolldice/{guess}', 'HomeController@showRolldice');
 
+Route::resource('posts', 'PostsController');
 
             // in class solution
 // Route::get('/rolldice/{guess}', function($guess)
