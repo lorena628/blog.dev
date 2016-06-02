@@ -6,8 +6,7 @@
     @yield('topscript')
 </head>
 <body>
-<main class="containter">
-    
+<main class="container">
     @yield('content')
 </main>
     <!-- for if you dont want in the container -->
@@ -17,6 +16,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    @yield('bottomscript')
+@yield('lowerbody')
+
+@yield('bottomscript')
 </body>
 </html>
