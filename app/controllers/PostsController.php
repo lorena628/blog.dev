@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make("/posts/create");
+		return View::make('posts.create');
 	}
 
 
