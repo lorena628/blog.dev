@@ -6,6 +6,8 @@
     @yield('topscript')
 </head>
 <body>
+
+    @yield('upperbody')
 <main class="container">
     @yield('content')
 </main>
