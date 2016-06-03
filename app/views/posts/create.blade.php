@@ -30,11 +30,11 @@
         <li class="active"><a href="#">Create Post<span class="sr-only"></span></a></li>
         <!-- <li><a href="#">Link</a></li> -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="create"></a></li>
-            <li><a href="#">Update a post</a></li>
-            <li><a href="#">Delete a post</a></li>
+            <li><a href="update">Update Post</a></li>
+            <li><a href="#">Delete Post</a></li>
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
@@ -57,30 +57,32 @@
 @stop
 
 
-
 @section('content')
 <h1>Create a blog post <br><i class="fa fa-pencil-square-o " aria-hidden="true"></i></h1>
-    <form method="POST" action="{{{ action('PostsController@store') }}}">
-            
+
+
+{{ Form::open(array('action' => 'PostsController@store')) }}
+
+    <!-- {{ Form::label('title', 'Title') }} -->
                 {{ $errors->first('title', '<span class="help-block">:message</span>') }}
-            <p><input class="forms" type="text" name="title" placeholder="Title: " value="{{{ Input::old('title') }}}"></p>
+    {{ Form::text('title', null, array('class' =>'form-control', 'placeholder'=> 'Title', 'value'=> "{{{ Input::old('title') }}}")) }}
 
+    <!-- {{ Form::label('description', 'Description') }} -->
+                {{ $errors->first('description', '<span class="help-block">:message</span>') }}
+    {{ Form::text('description', null, array('class' =>'form-control', 'placeholder'=> 'Description', 'value'=> "{{{ Input::old('description') }}}")) }}
 
-
-                {{ $errors->first('desctiption', '<span class="help-block">:message</span>') }}
-            <p><input class="forms" type="text" name="description" placeholder="Description: " value="{{{ Input::old('description') }}}"></p>
-
-
+    <!-- {{ Form::label('content', 'Content') }} -->
             {{ $errors->first('content', '<span class="help-block">:message</span>') }}
-            <textarea placeholder= "Content:" class="form" name= "content"id="textarea" rows="7">{{{ Input::old('content') }}}</textarea>
-           <!--  <textarea placeholder = "Content" class="form-control input-lg" type="text" id="inputLarge">
-            </textarea> -->
+    {{ Form::text('content', null, array('class' =>'form-control', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
 
-
+    <!-- {{ Form::label('category', 'Category') }} -->
             {{ $errors->first('category', '<span class="help-block">:message</span>') }}
-            <p><input class="forms" type="text" name="category" placeholder="Category: " value="{{{ Input::old('category') }}}"></p>
+    {{ Form::text('category', null, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
 
-            <!-- <a href="#" class="btn btn-default">Default</a> -->
             <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
-    </form>
+
+
+{{ Form::close() }}
+
+
 @stop
