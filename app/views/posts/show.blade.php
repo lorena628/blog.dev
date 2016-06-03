@@ -23,10 +23,10 @@
         <li class="active"><a href="">{{{ $post->title }}}<span class="sr-only">(current)</span></a></li>
         <!-- <li><a href="#">Link</a></li> -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="create">Create a post</a></li>
-            <li><a href="#">Update a post</a></li>
+            <li><a href="{{ action('PostsController@edit', $post->id)}}">Edit post</a></li>
             <li><a href="#">Delete a post</a></li>
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
