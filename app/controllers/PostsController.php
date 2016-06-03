@@ -1,6 +1,6 @@
 <?php
 
-class PostsController extends BaseController {
+class PostsController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -73,7 +73,8 @@ class PostsController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		return 'editing this post';
+		$post = Post::find($id);
+		return View::make('posts.edit')->with(['post' => $post]);
 	}
 
 
@@ -85,7 +86,20 @@ class PostsController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$post = Post::find($id);
+	    $post->title = Input::get('title');
+	    $post->user_id = User::first()->id;
+	    $post->description = Input::get('description');
+	    $post->content  = Input::get('content');
+	    $post->category = Input::get('category');
+
+    	$validator = Validator::make(Input::all(), Post::$rules);
+
+	    if ($validator->fails()) {
+	  		return Redirect::back()->withInput()->withErrors($validator);
+	    } else if($post->save()) {
+	    	return Redirect::action('PostsController@show', $post->id);
+	    }
 	}
 
 
