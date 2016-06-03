@@ -1,6 +1,6 @@
 <?php
 
-class PostsController extends \BaseController {
+class PostsController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +9,8 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return 'all lists of postings';
+		$posts = Post::all();
+		return View::make('posts.index')->with('posts', $posts);
 	}
 
 
@@ -31,7 +32,28 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		return Redirect::back()->withInput();
+		$post = new Post();
+	    $post->title = Input::get('title');
+	    $post->user_id = User::first()->id;
+	    $post->description = Input::get('description');
+	    $post->content  = Input::get('content');
+	    $post->category = Input::get('category');
+
+    	$validator = Validator::make(Input::all(), Post::$rules);
+	    
+	    // if($post->save()) {
+	    // 	return Redirect::action('PostsController@show', $post->id);
+	    // } else {
+	    // 	return Redirect::back()->withInput();
+	    // }
+
+	    if ($validator->fails()) {
+	  		return Redirect::back()->withInput()->withErrors($validator);
+	    } else if($post->save()) {
+	    	return Redirect::action('PostsController@show', $post->id);
+	    }
+
+
 	}
 
 
@@ -43,7 +65,9 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return 'showing all posts for this user';
+		$post = Post::find($id);
+		return View::make('posts.show')->with('post', $post);
+		// return 'showing all posts for this user';
 	}
 
 
