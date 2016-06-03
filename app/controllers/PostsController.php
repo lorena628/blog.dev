@@ -9,7 +9,7 @@ class PostsController extends BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::all();
+		$posts = Post::paginate(4);
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
@@ -40,12 +40,6 @@ class PostsController extends BaseController {
 	    $post->category = Input::get('category');
 
     	$validator = Validator::make(Input::all(), Post::$rules);
-	    
-	    // if($post->save()) {
-	    // 	return Redirect::action('PostsController@show', $post->id);
-	    // } else {
-	    // 	return Redirect::back()->withInput();
-	    // }
 
 	    if ($validator->fails()) {
 	  		return Redirect::back()->withInput()->withErrors($validator);
