@@ -23,6 +23,20 @@ Route::get('/rolldice/{guess}', 'HomeController@showRolldice');
 
 Route::resource('posts', 'PostsController');
 
+
+
+Route::get('orm-test', function ()
+{
+    $posts = Post::all();
+    return $posts;
+});
+
+
+
+
+
+
+
             // in class solution
 // Route::get('/rolldice/{guess}', function($guess)
 // {   
