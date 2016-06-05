@@ -32,6 +32,18 @@ class HomeController extends BaseController {
 		return View::make("weathermap");
 	}
 
+	public function showSimplesimon()
+	{
+		return View::make("simplesimon");
+	}
+
+	public function showCalculator()
+	{
+		return View::make("calculator");
+	}
+
+
+
 	public function showRolldice($guess)
 	{
 		$randomnum = mt_rand(1,6);
