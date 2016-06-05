@@ -21,6 +21,10 @@ Route::get('/weathermap', 'HomeController@showWeathermap');
 
 Route::get('/rolldice/{guess}', 'HomeController@showRolldice');
 
+Route::get('/simplesimon', 'HomeController@showSimplesimon');
+
+Route::get('/calculator', 'HomeController@showCalculator');
+
 Route::resource('posts', 'PostsController');
 
 
