@@ -2,6 +2,7 @@
 
 @section('topscript')
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-uSbimwRPo7PKyTL6azsx1CcBce/X9Qg+wX1MAjNV1gAkSXYveZbZeMMyJghdsSol" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/showpost.css">
 @stop
 
 
@@ -53,10 +54,19 @@
 
 @section('body')
 <section class="container">
-        <h4>Title: {{{ $post->title }}}</h4>
-        <h4>Description: {{{ $post->description }}}</h4>
-        <h4>Content: {{{ $post->content }}}</h4>
-        <h4>Category: {{{ $post->category }}}</h4>
+
+        <div id="title">
+            <h1>{{{ $post->title }}}</h1>
+        </div>
+       <!--  <div id="description">
+            <h6> {{{ $post->description }}}</h6>
+        </div> -->
+        <div id="content">
+            <h4>{{{ $post->content }}}</h4>
+        </div>
+        <div id="category">
+            <h6>Category: {{{ $post->category }}}</h6>
+        </div>
         <p> Written on: {{{ $post->created_at }}}</p>
 </section>
 @stop
