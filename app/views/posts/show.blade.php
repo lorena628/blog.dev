@@ -58,15 +58,13 @@
         <div id="title">
             <h1>{{{ $post->title }}}</h1>
         </div>
-<!--         <div id="description">
-            <h6> {{{ $post->description }}}</h6>
-        </div> -->
         <div id="content">
             <h4>{{{ $post->content }}}</h4>
         </div>
         <div id="category">
             <h6>Category: {{{ $post->category }}}</h6>
         </div>
+        <p>Written by : {{{ $post->user->email }}}</p>
         <p> Written on: {{{ $post->created_at }}}</p>
 </section>
 @stop
