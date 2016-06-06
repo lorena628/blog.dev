@@ -44,9 +44,14 @@ class PostsController extends \BaseController {
 	    if ($validator->fails()) {
 	  		return Redirect::back()->withInput()->withErrors($validator);
 	    } else if($post->save()) {
-	    	return Redirect::action('PostsController@show', $post->id);
-	    }
-
+	    	// return Redirect::action('PostsController@show', $post->id);
+	     	Session::flash('successMessage', 'Post has been saved');
+			$value = Session::get('successMessage');
+			return Redirect::action('PostsController@create', $post->id);
+		}
+	    // set flash data
+		// retrieve flash data (same as any other session variable)
+	  
 
 	}
 
