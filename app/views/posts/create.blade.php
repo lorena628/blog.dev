@@ -12,6 +12,7 @@
 @stop
 
 
+
 @section('upperbody')
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -56,9 +57,22 @@
 </nav>
 @stop
 
+@section('abovecontainer')
+
+@if (Session::has('successMessage'))
+    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+@endif
+@if (Session::has('errorMessage'))
+    <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+@endif
+
+@stop
+
 
 @section('content')
 <h1>Create a blog post <br><i class="fa fa-pencil-square-o " aria-hidden="true"></i></h1>
+
+
 
 
 {{ Form::open(array('action' => 'PostsController@store')) }}
