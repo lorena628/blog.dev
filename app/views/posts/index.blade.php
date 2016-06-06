@@ -67,8 +67,14 @@
     <div class="container">
         <h3><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h3>
         <h5>Description: {{{ $post->description }}}</h5>
-       <!--  <h4>Content: {{{ $post->content }}}</h4> -->
+      
+
         <h5>Category: {{{ $post->category }}}</h5>
+        <p><small>Posted on:
+          {{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}
+          </small>
+        </p>
+
         <p> Written on: {{{ $post->created_at }}}</p>
     </div>
     @endforeach
