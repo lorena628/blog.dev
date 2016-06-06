@@ -58,7 +58,7 @@
         <div id="title">
             <h1>{{{ $post->title }}}</h1>
         </div>
-       <!--  <div id="description">
+<!--         <div id="description">
             <h6> {{{ $post->description }}}</h6>
         </div> -->
         <div id="content">
