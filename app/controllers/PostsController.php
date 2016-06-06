@@ -32,6 +32,7 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
+
 		$post = new Post();
 	    $post->title = Input::get('title');
 	    $post->user_id = User::first()->id;
@@ -49,6 +50,7 @@ class PostsController extends \BaseController {
 	    	// return Redirect::action('PostsController@show', $post->id);
 	     	Session::flash('successMessage', 'Post has been saved');
 			$value = Session::get('successMessage');
+			Log::info('this is some useful information you should be seeing ');
 			return Redirect::action('PostsController@create', $post->id);
 		}
 	    // set flash data
@@ -66,8 +68,13 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$post = Post::find($id);
-		return View::make('posts.show')->with('post', $post);
+
+		try {
+			$post = Post::findOrFail($id);
+			return View::make('posts.show')->with('post', $post);
+		} catch(Exception $e) {
+			App::abort(404);
+		}
 		// return 'showing all posts for this user';
 	}
 
