@@ -42,6 +42,8 @@ class PostsController extends \BaseController {
     	$validator = Validator::make(Input::all(), Post::$rules);
 
 	    if ($validator->fails()) {
+	    	Session::flash('errorMessage', 'Could not save post');
+			$value = Session::get('errorMessage');
 	  		return Redirect::back()->withInput()->withErrors($validator);
 	    } else if($post->save()) {
 	    	// return Redirect::action('PostsController@show', $post->id);
@@ -116,7 +118,8 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$post = Post::find($id);
+		$post->delete();
 	}
 
 
