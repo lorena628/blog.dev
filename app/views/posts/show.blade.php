@@ -42,9 +42,15 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul> -->
+      <?php if(Auth::check()) { ?>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
+          </ul>
+        <?php }else { ?>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ action('HomeController@showLoginForm') }}">Login</a></li>
+          </ul>
+      <?php } ?>
     </div>
   </div>
 </nav>
