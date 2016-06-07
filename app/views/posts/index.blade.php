@@ -1,15 +1,9 @@
 @extends('layouts.master')
 
-
-
 @section('topscript')
 <!-- bootstrap theme on bootswatch (darkly) -->
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-uSbimwRPo7PKyTL6azsx1CcBce/X9Qg+wX1MAjNV1gAkSXYveZbZeMMyJghdsSol" crossorigin="anonymous">
 @stop
-
-
-
-
 
 @section('upperbody')
 <nav class="navbar navbar-default">
@@ -62,11 +56,6 @@
   </div>
 </nav>
 @stop
-
-
-
-
-
 
 
 @section('content')
