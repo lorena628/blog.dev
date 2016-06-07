@@ -138,7 +138,7 @@ class PostsController extends \BaseController {
 	{
 		$post = Post::find($id);
 		$post->delete();
-		// return Redirect::action('PostsController@delete', $post->id);
+		return Redirect::action('PostsController@index', $post->id);
 	}
 
 
