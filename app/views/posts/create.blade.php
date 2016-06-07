@@ -49,9 +49,9 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -94,7 +94,7 @@
     {{ Form::text('category', null, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
 
             <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
-            
+
 {{ Form::close() }}
 
 
