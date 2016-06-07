@@ -5,10 +5,10 @@
 {{ Form::open(array('action' =>('HomeController@doLogin'), 'method' => 'POST')) }}
 
     {{ Form::text('email',  null,  array('class' =>'form-control', 'placeholder'=> 'Email')) }}
-    {{ Form::text('password',  null,  array('class' =>'form-control', 'placeholder'=> 'Password')) }}
+    {{ Form::password('password',  null,  array('class' =>'form-control', 'placeholder'=> 'Password')) }}
 
 
-            <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
+            <p><input class="btn btn-default" id="btn_sub"  type="submit" value="Submit"></p>
 
 
 {{ Form::close() }}
