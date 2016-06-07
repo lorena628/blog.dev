@@ -28,7 +28,7 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="create">Create a post</a></li>
             <li><a href="{{ action('PostsController@edit', $post->id)}}">Edit post</a></li>
-            <li><a href="#">Delete a post</a></li>
+            <li><a href="{{ action('PostsController@destroy', $post->id)}}">Delete post</a></li>
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
