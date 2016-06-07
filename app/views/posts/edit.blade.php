@@ -48,9 +48,9 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
+      </ul>
     </div>
   </div>
 </nav>
