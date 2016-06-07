@@ -75,21 +75,20 @@
 
 
 
-{{ Form::open(array('action' => 'PostsController@destroy')) }}
+{{ Form::open(array('action' => 'PostsController@store')) }}
 
-<!-- {{ Form::label('title', 'Title') }} -->
+
                 {{ $errors->first('title', '<span class="help-block">:message</span>') }}
     {{ Form::text('title', null, array('class' =>'form-control', 'placeholder'=> 'Title', 'value'=> "{{{ Input::old('title') }}}")) }}
 
-    <!-- {{ Form::label('description', 'Description') }} -->
+    
                 {{ $errors->first('description', '<span class="help-block">:message</span>') }}
     {{ Form::text('description', null, array('class' =>'form-control', 'placeholder'=> 'Description', 'value'=> "{{{ Input::old('description') }}}")) }}
 
-    <!-- {{ Form::label('content', 'Content') }} -->
+   
             {{ $errors->first('content', '<span class="help-block">:message</span>') }}
-    {{ Form::text('content', null, array('class' =>'form-control', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
-
-    <!-- {{ Form::label('category', 'Category') }} -->
+    {{ Form::textarea('content', null, array('class' =>'col-lg-12 control-label', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
+    
             {{ $errors->first('category', '<span class="help-block">:message</span>') }}
     {{ Form::text('category', null, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
 
