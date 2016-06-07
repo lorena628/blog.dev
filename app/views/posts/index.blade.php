@@ -43,15 +43,15 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
 
-       <?php if(Auth::check()) { ?>
+       @if(Auth::check())
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
           </ul>
-        <?php }else { ?>
+        @else 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@showLoginForm') }}">Login</a></li>
           </ul>
-      <?php } ?>
+      @endif
     </div>
   </div>
 </nav>
