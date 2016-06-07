@@ -27,8 +27,10 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="create">Create a post</a></li>
+            @if(Auth::id()==$post->user_id)
             <li><a href="{{ action('PostsController@edit', $post->id)}}">Edit post</a></li>
-            <!-- <li><a href="{{ action('PostsController@destroy', $post->id)}}">Delete post</a></li> -->
+            @endif
+         
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
@@ -42,15 +44,15 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
-      <?php if(Auth::check()) { ?>
+      @if(Auth::check())
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
           </ul>
-        <?php }else { ?>
+        @else 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@showLoginForm') }}">Login</a></li>
           </ul>
-      <?php } ?>
+      @endif
     </div>
   </div>
 </nav>
@@ -74,18 +76,20 @@
         <p> Written on: {{{ $post->created_at }}}</p>
 
         <div id="dbutton">
-        <?php if(Auth::check()) { ?>
-          <button id="delete-post-btn" class="btn btn-default btn-danger">Delete post</button>
-          {{-- This creates an empty form that points to the destroy method on the PostsController --}}
-          {{-- There is nothing visible to the user here, but we can target this form with Javascript --}}
-          {{ Form::open([
-              'action' => ['PostsController@destroy', $post->id],
-              'id'     => 'delete-post-form',
-              'method' => 'DELETE',
-          ]) }}
-          {{ Form::close() }}
-            <?php }else { ?>
-        <?php } ?>
+        @if(Auth::id()==$post->user_id)
+            @if(Auth::check())
+              <button id="delete-post-btn" class="btn btn-default btn-danger">Delete post</button>
+              {{-- This creates an empty form that points to the destroy method on the PostsController --}}
+              {{-- There is nothing visible to the user here, but we can target this form with Javascript --}}
+              {{ Form::open([
+                  'action' => ['PostsController@destroy', $post->id],
+                  'id'     => 'delete-post-form',
+                  'method' => 'DELETE',
+              ]) }}
+              {{ Form::close() }}
+                @else
+            @endif
+        @endif
         </div>
 </section>
 @stop
