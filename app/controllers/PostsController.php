@@ -2,6 +2,16 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+		$this->beforeFilter('auth', array(
+			'except'=>array(
+				'index',
+				'show'
+				)
+			));
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -128,6 +138,7 @@ class PostsController extends \BaseController {
 	{
 		$post = Post::find($id);
 		$post->delete();
+		// return Redirect::action('PostsController@delete', $post->id);
 	}
 
 
