@@ -27,6 +27,10 @@ Route::get('/calculator', 'HomeController@showCalculator');
 
 Route::resource('posts', 'PostsController');
 
+Route::get('/login', 'HomeController@showLoginForm');
+
+Route::post('/login', 'HomeController@doLogin');
+
 
 
 
