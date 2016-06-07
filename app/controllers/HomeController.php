@@ -30,7 +30,7 @@ class HomeController extends BaseController {
 	public function showLoginForm()
 	{
 		if (Auth::check()) {
-			return Redirect::action('PostsController@index', $post->id);
+			return Redirect::action('PostsController@index');
 		} else {
 	    	return View::make("login");
 		}
@@ -41,7 +41,7 @@ class HomeController extends BaseController {
 		$password = Input::get('password');
 
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
-	    	return Redirect::intended('/');
+	    	return Redirect::action('PostsController@index');
 		} else {
 		    // login failed, go back to the login screen
 			return Redirect::back();
@@ -50,7 +50,7 @@ class HomeController extends BaseController {
 	public function doLogout()
 	{
 		Auth::logout();
-		return Redirect::action('PostsController@index', $post->id);
+		return Redirect::action('PostsController@index');
 	}
 
 
