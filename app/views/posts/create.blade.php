@@ -75,9 +75,9 @@
 
 
 
-{{ Form::open(array('action' => 'PostsController@store')) }}
+{{ Form::open(array('action' => 'PostsController@destroy')) }}
 
-    <!-- {{ Form::label('title', 'Title') }} -->
+<!-- {{ Form::label('title', 'Title') }} -->
                 {{ $errors->first('title', '<span class="help-block">:message</span>') }}
     {{ Form::text('title', null, array('class' =>'form-control', 'placeholder'=> 'Title', 'value'=> "{{{ Input::old('title') }}}")) }}
 
@@ -94,8 +94,7 @@
     {{ Form::text('category', null, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
 
             <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
-
-
+            
 {{ Form::close() }}
 
 
