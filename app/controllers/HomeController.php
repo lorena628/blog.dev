@@ -14,11 +14,52 @@ class HomeController extends BaseController {
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
-
 	public function showWelcome()
 	{
 		return View::make('hello');
 	}
+
+
+
+
+
+
+
+
+
+	public function showLoginForm()
+	{
+		if (Auth::check()) {
+			return Redirect::action('PostsController@index', $post->id);
+		} else {
+	    	return View::make("login");
+		}
+	} 
+	public function doLogin()
+	{	
+		$email= Input::get('email');
+		$password = Input::get('password');
+
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+	    	return Redirect::intended('/');
+		} else {
+		    // login failed, go back to the login screen
+			return Redirect::back();
+		}
+	}
+	public function doLogout()
+	{
+		Auth::logout();
+		return Redirect::action('PostsController@index', $post->id);
+	}
+
+
+
+
+
+
+
+
 	public function showResume()
 	{
 		return View::make("resume");
