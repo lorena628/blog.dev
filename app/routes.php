@@ -31,6 +31,14 @@ Route::get('/login', 'HomeController@showLoginForm');
 
 Route::post('/login', 'HomeController@doLogin');
 
+Route::get('/create', 'HomeController@doLogout');
+
+Route::get('/edit', 'HomeController@doLogout');
+
+Route::get('/index', 'HomeController@doLogin');
+
+Route::get('/index', 'HomeController@doLogout');
+
 
 
 
