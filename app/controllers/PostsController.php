@@ -46,7 +46,7 @@ class PostsController extends \BaseController {
 
 		$post = new Post();
 	    $post->title = Input::get('title');
-	    $post->user_id = User::first()->id;
+	    $post->user_id = Auth::id();
 	    $post->description = Input::get('description');
 	    $post->content  = Input::get('content');
 	    $post->category = Input::get('category');
@@ -62,7 +62,7 @@ class PostsController extends \BaseController {
 	     	Session::flash('successMessage', 'Post has been saved');
 			$value = Session::get('successMessage');
 			Log::info('this is some useful information you should be seeing ');
-			return Redirect::action('PostsController@create', $post->id);
+			return Redirect::action('PostsController@index', $post->id);
 		}
 	    // set flash data
 		// retrieve flash data (same as any other session variable)

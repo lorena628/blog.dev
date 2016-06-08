@@ -43,6 +43,8 @@ class HomeController extends BaseController {
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
 	    	return Redirect::action('PostsController@index');
 		} else {
+			Session::flash('errorMessage', 'Please enter correct information');
+			$value = Session::get('errorMessage');
 		    // login failed, go back to the login screen
 			return Redirect::back();
 		}
