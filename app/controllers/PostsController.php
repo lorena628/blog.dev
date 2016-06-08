@@ -61,7 +61,7 @@ class PostsController extends \BaseController {
 	     	Session::flash('successMessage', 'Post has been saved');
 			$value = Session::get('successMessage');
 			Log::info('this is some useful information you should be seeing ');
-			return Redirect::action('PostsController@index', $post->id);
+			return Redirect::action('PostsController@show', $post->id);
 		}
 	    // set flash data
 		// retrieve flash data (same as any other session variable)
