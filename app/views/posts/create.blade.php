@@ -30,16 +30,6 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Create Post<span class="sr-only"></span></a></li>
         <!-- <li><a href="#">Link</a></li> -->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="create"></a></li>
-            <li><a href="update">Update Post</a></li>
-            <li><a href="#">Delete Post</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
@@ -73,28 +63,29 @@
 <h1>Create a blog post <br><i class="fa fa-pencil-square-o " aria-hidden="true"></i></h1>
 
 
-
-
 {{ Form::open(array('action' => 'PostsController@store')) }}
 
-
-                {{ $errors->first('title', '<span class="help-block">:message</span>') }}
-    {{ Form::text('title', null, array('class' =>'form-control', 'placeholder'=> 'Title', 'value'=> "{{{ Input::old('title') }}}")) }}
-
+    <div class="form-group" id="t">   
+                    {{ $errors->first('title', '<span class="help-block">:message</span>') }}
+        {{ Form::text('title', null, array('class' =>'form-control', 'placeholder'=> 'Title')) }}
+    </div> 
     
-                {{ $errors->first('description', '<span class="help-block">:message</span>') }}
-    {{ Form::text('description', null, array('class' =>'form-control', 'placeholder'=> 'Description', 'value'=> "{{{ Input::old('description') }}}")) }}
+    <div class="form-group" id="des"> 
+                    {{ $errors->first('description', '<span class="help-block">:message</span>') }}
+        {{ Form::text('description', null, array('class' =>'form-control', 'placeholder'=> 'Description')) }}
+    </div> 
+        
+    <div class="form-group" id="cont">    
+                {{ $errors->first('content', '<span class="help-block">:message</span>') }}
+        {{ Form::textarea('content', null, array('class' =>'col-lg-12 control-label form-control', 'id'=>'content-field', 'placeholder'=> 'Content')) }}
+    </div>   
 
-   
-            {{ $errors->first('content', '<span class="help-block">:message</span>') }}
-    {{ Form::textarea('content', null, array('class' =>'col-lg-12 control-label', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
+    <div class="form-group" id="cat"> 
+                {{ $errors->first('category', '<span class="help-block">:message</span>') }}
+        {{ Form::text('category', null, array('class' =>'form-control', 'placeholder'=> 'Category')) }}
+    </div>  
     
-            {{ $errors->first('category', '<span class="help-block">:message</span>') }}
-    {{ Form::text('category', null, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
-
-            <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
+        <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
 
 {{ Form::close() }}
-
-
 @stop
