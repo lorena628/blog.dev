@@ -27,7 +27,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Edit: {{{ $post->title }}}<span class="sr-only"></span></a></li>
+        <li class="active"><a href="">Editing: {{{ $post->title }}}<span class="sr-only"></span></a></li>
           <li><a href="{{ action('PostsController@create') }}">Create a post</a></li>
         </li>
       </ul>
@@ -58,7 +58,6 @@
             {{ $errors->first('content', '<span class="help-block">:message</span>') }}
     {{ Form::textarea('content', $post->content, array('class' =>'form-control', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
     </div>
-
             <input class="btn btn-success" id="btn_sub"  type="submit" value="Submit">
 
 {{ Form::close() }}
