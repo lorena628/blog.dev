@@ -72,7 +72,7 @@
         <div id="dbutton">
         @if(Auth::id()==$post->user_id)
             @if(Auth::check())
-              <button id="delete-post-btn" class="btn btn-default btn-danger">Delete post</button>
+              <button id="delete-post-btn" class="btn btn-default btn-danger">Delete post ?</button>
               {{-- This creates an empty form that points to the destroy method on the PostsController --}}
               {{-- There is nothing visible to the user here, but we can target this form with Javascript --}}
               {{ Form::open([
