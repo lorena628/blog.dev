@@ -22,32 +22,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/posts">Blog.dev</a><!--this needs to be looked at -->
+      <a class="navbar-brand" href="/posts">Blog.dev</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Edit: {{{ $post->title }}}<span class="sr-only"></span></a></li>
-        <!-- <li><a href="#">Link</a></li> -->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="create"></a>Create Post</li>
-            <!-- <li><a href="{{ action('PostsController@edit', $post->id)}}">Edit Post</a></li> -->
-            <li><a href="#">Delete Post</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
+          <li><a href="{{ action('PostsController@create') }}">Create a post</a></li>
         </li>
       </ul>
-     <!--  <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
       </ul>
@@ -61,24 +44,27 @@
 
 {{ Form::open(array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 
-    <!-- {{ Form::label('title', 'Title') }} -->
+    <div class="form-group" id="t">     
                 {{ $errors->first('title', '<span class="help-block">:message</span>') }}
     {{ Form::text('title',   $post->title,  array('class' =>'form-control', 'placeholder'=> 'Title', 'value'=> "{{{ Input::old('title') }}}")) }}
+    </div>
 
-    <!-- {{ Form::label('description', 'Description') }} -->
+    <div class="form-group" id="des"> 
                 {{ $errors->first('description', '<span class="help-block">:message</span>') }}
     {{ Form::text('description', $post->description, array('class' =>'form-control', 'placeholder'=> 'Description', 'value'=> "{{{ Input::old('description') }}}")) }}
+    </div>
 
-    <!-- {{ Form::label('content', 'Content') }} -->
+    <div class="form-group" id="cont">
             {{ $errors->first('content', '<span class="help-block">:message</span>') }}
-    {{ Form::text('content', $post->content, array('class' =>'form-control', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
+    {{ Form::textarea('content', $post->content, array('class' =>'form-control', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
+    </div>
 
-    <!-- {{ Form::label('category', 'Category') }} -->
+     <div class="form-group" id="cat"> 
             {{ $errors->first('category', '<span class="help-block">:message</span>') }}
     {{ Form::text('category', $post->category, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
+    </div>
 
             <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
-
 
 {{ Form::close() }}
 @stop
