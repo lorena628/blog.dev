@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('topscript')
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-uSbimwRPo7PKyTL6azsx1CcBce/X9Qg+wX1MAjNV1gAkSXYveZbZeMMyJghdsSol" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/css/showpost.css">
 @stop
 
@@ -63,11 +63,9 @@
             <h1>{{{ $post->title }}}</h1>
         </div>
         <div id="content">
-            <h4>{{{ $post->content }}}</h4>
+            <h3>{{{ $post->content }}}</h4>
         </div>
-        <div id="category">
-            <h6>Category: {{{ $post->category }}}</h6>
-        </div>
+       
         <p>Written by : {{{ $post->user->email }}}</p>
         <p> Written on: {{{ $post->created_at }}}</p>
 

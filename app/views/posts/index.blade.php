@@ -2,10 +2,15 @@
 
 @section('topscript')
 <!-- bootstrap theme on bootswatch (darkly) -->
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-uSbimwRPo7PKyTL6azsx1CcBce/X9Qg+wX1MAjNV1gAkSXYveZbZeMMyJghdsSol" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
 @stop
 
 @section('upperbody')
+<style>
+  {
+
+  }
+</style>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -65,14 +70,12 @@
         <h3><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h3>
         <h5>Description: {{{ $post->description }}}</h5>
       
-
-        <h5>Category: {{{ $post->category }}}</h5>
         <p><small>Posted on:
           {{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}
           </small>
         </p>
 
-        <p> Written on: {{{ $post->created_at }}}</p>
+        <!-- <p> Written on: {{{ $post->created_at }}}</p> -->
     </div>
     @endforeach
     <p>{{ $posts->links() }}</p>

@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="/css/createpost.css">
 <!-- <link rel="icon" href="/img/adlister.png"> -->
 <!-- bootstrap theme on bootswatch (darkly) -->
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-uSbimwRPo7PKyTL6azsx1CcBce/X9Qg+wX1MAjNV1gAkSXYveZbZeMMyJghdsSol" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
  <!-- google font -->
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 <!-- font awesome -->
@@ -59,12 +59,7 @@
     {{ Form::textarea('content', $post->content, array('class' =>'form-control', 'id'=>'content-field', 'placeholder'=> 'Content', 'value'=> "{{{ Input::old('content') }}}")) }}
     </div>
 
-     <div class="form-group" id="cat"> 
-            {{ $errors->first('category', '<span class="help-block">:message</span>') }}
-    {{ Form::text('category', $post->category, array('class' =>'form-control', 'placeholder'=> 'Category', 'value'=> "{{{ Input::old('category') }}}")) }}
-    </div>
-
-            <input class="btn btn-default" id="btn_sub"  type="submit" value="Submit">
+            <input class="btn btn-success" id="btn_sub"  type="submit" value="Submit">
 
 {{ Form::close() }}
 @stop
