@@ -31,10 +31,6 @@
             <li><a href="{{ action('PostsController@edit', $post->id)}}">Edit post</a></li>
             @endif
          
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
