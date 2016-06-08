@@ -49,7 +49,6 @@ class PostsController extends \BaseController {
 	    $post->user_id = Auth::id();
 	    $post->description = Input::get('description');
 	    $post->content  = Input::get('content');
-	    $post->category = Input::get('category');
 
     	$validator = Validator::make(Input::all(), Post::$rules);
 
@@ -111,18 +110,20 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
+		// dd(Input::all());	
 		$post = Post::find($id);
 	    $post->title = Input::get('title');
-	    $post->user_id = User::first()->id;
+	   	$post->user_id = Auth::id();
 	    $post->description = Input::get('description');
 	    $post->content  = Input::get('content');
-	    $post->category = Input::get('category');
 
     	$validator = Validator::make(Input::all(), Post::$rules);
 
 	    if ($validator->fails()) {
+	    	// dd('failed');
 	  		return Redirect::back()->withInput()->withErrors($validator);
 	    } else if($post->save()) {
+	    	// dd('success');
 	    	return Redirect::action('PostsController@show', $post->id);
 	    }
 	}
