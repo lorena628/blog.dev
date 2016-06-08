@@ -10,7 +10,11 @@
 @if (Session::has('errorMessage'))
     <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
 @endif
-
+ <style>
+    .alert-danger{
+        text-align: center;
+    }
+ </style>
 
 <div class="container">
     <div id="filler">
