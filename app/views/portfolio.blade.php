@@ -20,8 +20,8 @@
 
     <div id="cover_pic">
         <div class="bns">
-            <input type="button" id="btn" onclick="location.href='#';" value="Projects" />
-            <input type="button" id="btn" onclick="location.href='#';" value=" Blog " />
+            <input type="button" id="btn" onclick="location.href='#projects';" value="Projects" />
+            <input type="button" id="btn" onclick="location.href='/posts';" value="Blog" />
             <input type="button" id="btn" onclick="location.href='#';" value=" Contact" />    
         </div>
         <h1> Lorena Villanueva</h1>
@@ -31,50 +31,10 @@
     <div id= "about_me" class="col-md-12 text-center">     
         <h1>About Me</h1>
         <p>Full stack developer from Texas. I have a diverse set of skills that include HTML/CSS/Javascript/JQuery/PHP/MySQL/Laravel</p>
-     <!--    <div class="col-lg-4">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
-        <div class="col-lg-4"> -->
-            <!-- <img class="img-circle" src="/img/cow2.jpg"> -->
-          <!--   <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-            </span>
-        </div> -->
-      <!--   <div class="col-lg-4">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
- -->
- <!--    <div class="col-lg-4">
-          <img class="img-circle" src="/img/cow2.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-
-        <div class="col-lg-4">
-          <img class="img-circle" src="/img/cow2.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-
-        <div class="col-lg-4">
-          <img class="img-circle" src="/img/cow2.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-    </div>  -->  
+     </div>
     <!-- _________________________________________________________________________________________________ -->
-    <div id= "my_work" class="col-md-12 text-center">     
-        <h1><a href="#top" >My Work</h1></a>
+    <div id= "projects" class="col-md-12 text-center">     
+        <h1><a href="#top" >Projects</h1></a>
             <br><a href="/simplesimon">Simple Simon<a></br>
             <br><a href="/calculator">Calculator</br>
             <br>Adlister</br>
@@ -99,7 +59,7 @@
 <input type="text" name="comment" value="your comment" size="50"><br><br>
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
-</form> --> -->
+</form>
 
 
 
