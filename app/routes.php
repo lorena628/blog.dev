@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@showPortfolio');
 
-Route::get('/resume', 'HomeController@showResume');
+// Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
