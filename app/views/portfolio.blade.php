@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('topscript')
-    <title>Portfolio</title>
+    <title>lorenamarie</title>
     <!-- google fonts -->
    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
    <!-- font awesomes -->
