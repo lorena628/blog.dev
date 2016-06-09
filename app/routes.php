@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@showWelcome');
+Route::get('/', 'HomeController@showPortfolio');
 
 Route::get('/resume', 'HomeController@showResume');
 
@@ -42,6 +42,8 @@ Route::get('/edit', 'HomeController@doLogout');
 Route::get('/index', 'HomeController@doLogin');
 
 Route::get('/index', 'HomeController@doLogout');
+
+
 
 
 
