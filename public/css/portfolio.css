@@ -49,6 +49,9 @@ h1 {
     #about{
         font-size: 3em;
     }
+    #about_des{
+        font-size: 2em;
+    }
 #my_work{
     text-align: center;
     padding-top: 60px;

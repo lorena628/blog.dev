@@ -31,7 +31,7 @@
     <!-- _________________________________________________________________________________________________ -->
     <div id= "about_me" class="col-md-12 text-center">     
         <h1 id="about">About Me</h1>
-        <p id="about">Full stack developer from Texas. I have a diverse set of skills that include HTML/CSS/Javascript/JQuery/PHP/MySQL/Laravel</p>
+        <p id="about_des">Full stack developer from Texas. I have a diverse set of skills that include HTML/CSS/Javascript/JQuery/PHP/MySQL/Laravel</p>
      </div>
     <!-- _________________________________________________________________________________________________ -->
     <div id= "projects" class="col-md-12 text-center">     
@@ -41,7 +41,7 @@
             <br><a href="http://adlister.lorenamarie.xyz/">Adlister</br>
             <br><a href="http://nationalparks.lorenamarie.xyz/">National Parks Database</br> 
             <!-- <br>Adlister</br>  -->
-            <br><a href="/">lorenamarie.xyz</a></br>
+            <br><a href="https://github.com/lorena628/blog.dev">lorenamarie.xyz</a></br>
     </div>   
     <!-- _________________________________________________________________________________________________ -->
     <div id= "contact" class="col-md-12 text-center">     
