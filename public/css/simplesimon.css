@@ -1,0 +1,89 @@
+
+body{
+    background-color: black;
+    font-family: 'Arvo', serif; 
+}
+#title{
+    text-align: center;
+    color: #D24451;
+    font-size: 60px;
+}
+
+/* this centers both buttons within div; NOT text */
+#twoBtns {
+    text-align: center;
+}
+
+/*start button*/
+.start{
+    background-color: #46A19E;
+    color: black;
+    border-color: black;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+.start:hover {
+    color: white;
+}
+
+
+/* output field; levels */
+.currentLevel{
+    width: 100px;
+    height: 40px;
+    border-color: black;
+    text-align: center;
+    background-color: #79847A;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+/* all 4 pads dimensions */
+.pad {
+    height: 270px;
+    width: 270px;
+    float: left;
+    border: 2px;
+    border-style: solid; 
+    border-radius: 50px;
+    opacity: .2;
+}
+
+
+/* this holds all pads */
+.gameboard {
+    position: relative;
+    margin-left: 300px;
+    margin-top: 50px;
+    height: 540px;
+    width: 540px;
+    background-color: black;
+}
+
+
+
+
+
+/*colors*/
+.red {
+    background-color: red;
+    
+}
+.blue {
+    background-color: blue;
+   
+}
+.green {
+    background-color: green;
+    
+}
+.yellow {
+    background-color: yellow;
+  
+}
+
+

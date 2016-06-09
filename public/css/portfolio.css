@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poiret One', cursive;
+}
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 7.9%;
+}
+#cover_pic{
+    color: white;
+    background-image: url(/img/street_rode_pavement.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 87%;
+    padding-bottom: 35%;
+    position: static;
+}
+    .bns{
+        text-align: center;
+    }
+    #btn {
+        text-align: center;
+        border: hidden;
+        font-size: 25px; 
+        margin-top: 2%;
+        padding-bottom: 10%;
+        outline:none;
+        background-color: transparent;  
+    }
+        #btn:hover{
+            color: gray;
+        }
+
+/* --------------content ------------------------------------ */
+
+#about_me{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    font-size-adjust: .60em;
+    background-color: black;
+    color: white;
+
+}
+#my_work{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30%;
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: black;
+    color: white;
+}
+/*    .img-circle {
+        border-radius: 50%;
+    }*/
+#contact {
+    text-align: center;
+    /*padding-top: 60px;*/
+    padding-bottom: 20%;
+/*    background-color: black;
+    color: white;*/
+}
+    #git,#lin{
+        color: black
+    }
+
+a:hover {
+    color: rgb(51,51,51);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(51,51,51);
+}
+a:visited {
+   color: rgb(51,51,51);
+}
+
+
+/* --------------footer ------------------------------------ */
+
+
+#home {
+    /*padding-top: .4em;*/
+    text-align: center;
+    height: 2.9em;
+    width: 2.8em;
+    margin-left: 48%;
+    padding-bottom: .25em;
+}
+
+.legal-one {
+    float: right;
+}
