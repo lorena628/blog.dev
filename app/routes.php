@@ -39,7 +39,6 @@ Route::get('/index', 'HomeController@doLogin');
 
 Route::get('/index', 'HomeController@doLogout');
 
-Route::get('/css', 'HomeController@showCss');
 
 
 
