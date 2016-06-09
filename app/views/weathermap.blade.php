@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('topscript')
+    <link rel="icon" href="/img/LM.png">
+    
     <title>Weather Map</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/weathermap.css">

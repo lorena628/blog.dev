@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="icon" href="/img/LM.png">
+        
         <title>Calculator project...</title>
         <link rel="stylesheet" href="/css/calculator.css">
 

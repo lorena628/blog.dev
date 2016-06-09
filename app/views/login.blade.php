@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('topscript')
+<link rel="icon" href="/img/LM.png">
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
 <link rel="stylesheet"  href="/../css/login.css">
 @stop

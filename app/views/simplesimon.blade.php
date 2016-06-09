@@ -2,6 +2,8 @@
 
 
 @section('topscript')
+    <link rel="icon" href="/img/LM.png">
+    
     <title>Simple Simon</title>
     
     <link rel="stylesheet" href="/css/simplesimon.css">

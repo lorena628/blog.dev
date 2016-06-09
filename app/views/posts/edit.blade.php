@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('topscript')
+<link rel="icon" href="/img/LM.png">
+
 <link rel="stylesheet" type="text/css" href="/css/createpost.css">
 <!-- <link rel="icon" href="/img/adlister.png"> -->
 <!-- bootstrap theme on bootswatch (darkly) -->
