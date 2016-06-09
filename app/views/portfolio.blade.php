@@ -37,8 +37,8 @@
         <h1><a href="#top" >Projects</h1></a>
             <br><a href="/simplesimon">Simple Simon<a></br>
             <br><a href="/calculator">Calculator</br>
-            <br><a href="/adlister.lorenamarie">Adlister</br>
-            <br><a href="/nationalparks.lorenamarie"></a>National Parks Database</br> 
+            <br><a href="adlister.lorenamarie.xyz">Adlister</br>
+            <br><a href="../nationalparks.lorenamarie.xyz"></a>National Parks Database</br> 
             <!-- <br>Adlister</br>  -->
             <br><a href="/">lorenamarie.xyz</a></br>
     </div>   
