@@ -14,6 +14,28 @@
     .alert-danger{
         text-align: center;
     }
+    h1{
+    color: white;
+        text-align: center;
+    }
+    body{
+        background-color: rgb(51,51,51);
+    }
+    #email-field{
+        margin-top: 3em;
+        margin-bottom: 2em;
+        height: 3em;
+    }
+    #pass-field{
+        height: 3em;
+    }
+    #button {
+        margin-top: 2em;
+        text-align: center;
+    }
+    #filler{
+        margin-top: 5em;
+    }
  </style>
 
 <div class="container">
