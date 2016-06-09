@@ -36,12 +36,12 @@
     <!-- _________________________________________________________________________________________________ -->
     <div id= "projects" class="col-md-12 text-center">     
         <h1><a href="#top" >Projects</h1></a>
-            <br><a href="/simplesimon">Simple Simon<a></br>
-            <br><a href="/calculator">Calculator</br>
-            <br><a href="http://adlister.lorenamarie.xyz/">Adlister</br>
-            <br><a href="http://nationalparks.lorenamarie.xyz/">National Parks Database</br> 
+            <br><a href="/simplesimon" target="_blank" class="sites">Simple Simon<a></br>
+            <br><a href="/calculator"target="_blank" class="sites">Calculator</br>
+            <br><a href="http://adlister.lorenamarie.xyz/" target="_blank" class="sites">Adlister</br>
+            <br><a href="http://nationalparks.lorenamarie.xyz/" target="_blank" class="sites">National Parks Database</br> 
             <!-- <br>Adlister</br>  -->
-            <br><a href="https://github.com/lorena628/blog.dev">lorenamarie.xyz</a></br>
+            <br><a href="https://github.com/lorena628/blog.dev" target="_blank" class="sites">lorenamarie.xyz</a></br>
     </div>   
     <!-- _________________________________________________________________________________________________ -->
     <div id= "contact" class="col-md-12 text-center">     
