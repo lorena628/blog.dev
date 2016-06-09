@@ -18,12 +18,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('hello');
 	}
-
-
-
-
-
-
+	public function showCss()
+	{
+		return View::make("login");
+	}
 
 
 

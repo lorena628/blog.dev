@@ -17,7 +17,7 @@
  </style>
 
 <div class="container">
-    <div id="filler">
+    <div id="filler">s
         <h1>Please login</h1>
 
             {{ Form::open(array('action' =>('HomeController@doLogin'), 'method' => 'POST')) }}
