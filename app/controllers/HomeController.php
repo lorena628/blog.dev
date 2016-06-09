@@ -48,14 +48,6 @@ class HomeController extends BaseController {
 		return Redirect::action('PostsController@index');
 	}
 
-
-	public function showBlog()
-	{
-		return View::make('posts.index')->with('posts', $posts);
-	}
-
-
-
 	public function showResume()
 	{
 		return View::make("resume");

@@ -43,9 +43,7 @@ Route::get('/index', 'HomeController@doLogin');
 
 Route::get('/index', 'HomeController@doLogout');
 
-Route::get('portfolio', 'HomeController@showPortfolio');
 
-Route::get('/blog', 'HomeController@showBlog');
 
 
 
