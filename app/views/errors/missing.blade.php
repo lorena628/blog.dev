@@ -29,6 +29,6 @@
 <h2>Not Found.</h2>
 
 
-<a href="/posts">Take me home</a>
+<a href="/">Take me home</a>
 @stop
 
