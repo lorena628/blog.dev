@@ -16,13 +16,13 @@
 
 @section('body')
 <a href="top"></a>
-
+  
 
     <div id="cover_pic">
         <div class="bns">
-            <input type="button" id="btn" onclick="location.href='#about_me';" value="About " />
-            <input type="button" id="btn" onclick="location.href='#my_work';" value=" Work " />
-            <input type="button" id="btn" onclick="location.href='#contact';" value=" Contact" />    
+            <input type="button" id="btn" onclick="location.href='#';" value="Projects" />
+            <input type="button" id="btn" onclick="location.href='#';" value=" Blog " />
+            <input type="button" id="btn" onclick="location.href='#';" value=" Contact" />    
         </div>
         <h1> Lorena Villanueva</h1>
     </div>
@@ -51,7 +51,7 @@
             </span>
         </div>
  -->
-    <div class="col-lg-4">
+ <!--    <div class="col-lg-4">
           <img class="img-circle" src="/img/cow2.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -71,7 +71,7 @@
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div>
-    </div>   
+    </div>  -->  
     <!-- _________________________________________________________________________________________________ -->
     <div id= "my_work" class="col-md-12 text-center">     
         <h1><a href="#top" >My Work</h1></a>

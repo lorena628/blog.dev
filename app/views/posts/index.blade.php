@@ -51,10 +51,13 @@
 
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search" action="{{{ action('PostsController@index') }}}">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form> 
+      <!-- this needs work -->
+
+
        @if(Auth::check())
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
