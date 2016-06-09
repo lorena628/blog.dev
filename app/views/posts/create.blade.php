@@ -23,12 +23,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/posts">Blog.dev</a><!--this needs to be looked at -->
+      <a class="navbar-brand" href="/">Home</a><!--this needs to be looked at -->
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Create Post<span class="sr-only"></span></a></li>
+        <li class="active"><a href="/posts">All Posts<span class="sr-only"></span></a></li>
+        <li class="active"><a href="">Create Post<span class="sr-only"></span></a></li>
         <!-- <li><a href="#">Link</a></li> -->
           </ul>
         </li>
