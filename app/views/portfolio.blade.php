@@ -75,12 +75,12 @@
     <!-- _________________________________________________________________________________________________ -->
     <div id= "my_work" class="col-md-12 text-center">     
         <h1><a href="#top" >My Work</h1></a>
-            <br>Simple Simon</br>
-            <br>Calculator</br>
-            <br>Here's What's on Tonight</br>
-            <br>National Parks Database</br> 
-            <br>Adlister</br> 
-            <br>lomanueva.com</br>
+            <br><a href="/simplesimon">Simple Simon<a></br>
+            <br><a href="/calculator">Calculator</br>
+            <br>Adlister</br>
+            <br><a href="/"></a>National Parks Database</br> 
+            <!-- <br>Adlister</br>  -->
+            <br><a href="/">lorenamarie.xyz</a></br>
     </div>   
     <!-- _________________________________________________________________________________________________ -->
     <div id= "contact" class="col-md-12 text-center">     
@@ -91,7 +91,7 @@
     <!-- _________________________________________________________________________________________________ -->
 
 
-
+<!-- 
 <!-- <form action="MAILTO:someone@example.com" method="post" enctype="text/plain"><br>
 <input type="text" name="name" value="your name"><br><br>
 <input type="text" name="mail" value="your email"><br>
@@ -99,7 +99,7 @@
 <input type="text" name="comment" value="your comment" size="50"><br><br>
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
-</form> -->
+</form> --> -->
 
 
 
