@@ -22,13 +22,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/posts">Blog.dev</a>
+      <a class="navbar-brand" href="/">Home</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="">Editing: {{{ $post->title }}}<span class="sr-only"></span></a></li>
           <li><a href="{{ action('PostsController@create') }}">Create a post</a></li>
+        <li class="active"><a href="">Editing: {{{ $post->title }}}<span class="sr-only"></span></a></li>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
