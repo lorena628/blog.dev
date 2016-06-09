@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('topscript')
+    <link rel="icon" href="/img/LM.png">
+    
     <title>lorenamarie</title>
     <!-- google fonts -->
    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -9,7 +11,6 @@
 
     <link rel="stylesheet" href="/../css/portfolio.css">
 @stop
-
 
 
 
