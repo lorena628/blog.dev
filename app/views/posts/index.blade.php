@@ -22,6 +22,7 @@
       </button>
       <a class="navbar-brand" href="/">Home</a>
     </div>
+    <p>{{ $posts->appends(Request::only('q'))->links() }}</p>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">

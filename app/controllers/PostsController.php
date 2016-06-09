@@ -19,9 +19,14 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::with('User')->orderBy('created_at', 'asc')->get();
-		$posts = Post::paginate(4);
-		return View::make('posts.index')->with('posts', $posts);
+        if (Input::has('q')) {
+            $searchTerm = Input::get('q');
+            $posts = Post::where('title', 'like', "%{$searchTerm}%")->paginate(4);
+        } else {
+            $posts = Post::with('user')->orderBy('title')->paginate(4);
+        }
+
+        return View::make('posts.index')->with('posts', $posts);
 	}
 
 
