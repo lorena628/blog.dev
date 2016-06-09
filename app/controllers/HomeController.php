@@ -49,9 +49,10 @@ class HomeController extends BaseController {
 	}
 
 
-
-
-
+	public function showBlog()
+	{
+		return View::make('posts.index')->with('posts', $posts);
+	}
 
 
 
