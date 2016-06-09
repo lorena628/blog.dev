@@ -46,6 +46,9 @@ h1 {
     color: white;
 
 }
+    #about{
+        font-size: 3em;
+    }
 #my_work{
     text-align: center;
     padding-top: 60px;

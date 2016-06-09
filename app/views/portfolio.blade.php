@@ -2,7 +2,7 @@
 
 @section('topscript')
     <link rel="icon" href="/img/LM.png">
-    
+
     <title>lorenamarie</title>
     <!-- google fonts -->
    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -30,8 +30,8 @@
 
     <!-- _________________________________________________________________________________________________ -->
     <div id= "about_me" class="col-md-12 text-center">     
-        <h1>About Me</h1>
-        <p>Full stack developer from Texas. I have a diverse set of skills that include HTML/CSS/Javascript/JQuery/PHP/MySQL/Laravel</p>
+        <h1 id="about">About Me</h1>
+        <p id="about">Full stack developer from Texas. I have a diverse set of skills that include HTML/CSS/Javascript/JQuery/PHP/MySQL/Laravel</p>
      </div>
     <!-- _________________________________________________________________________________________________ -->
     <div id= "projects" class="col-md-12 text-center">     
