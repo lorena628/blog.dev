@@ -24,7 +24,6 @@ class PostsController extends \BaseController {
             $searchTerm = Input::get('q');
             $posts = Post::where('title', 'like', "%{$searchTerm}%")->paginate(4);
         } else {
-        	dd ("you donot havew a search term");
             $posts = Post::orderBy('created_at', 'desc')->paginate(4);
         }
 
