@@ -20,9 +20,11 @@ class PostsController extends \BaseController {
 	public function index()
 	{
         if (Input::has('q')) {
+        	dd ("you have a search term");
             $searchTerm = Input::get('q');
             $posts = Post::where('title', 'like', "%{$searchTerm}%")->paginate(4);
         } else {
+        	dd ("you donot havew a search term");
             $posts = Post::orderBy('created_at', 'desc')->paginate(4);
         }
 
