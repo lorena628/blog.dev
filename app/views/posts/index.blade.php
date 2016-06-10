@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="/img/LM.png" id="pic"></a>
+      <a class="navbar-brand" href="/">Home</a>
     </div>
 
 
