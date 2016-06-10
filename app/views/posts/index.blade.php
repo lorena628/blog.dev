@@ -64,9 +64,9 @@
             <li><a href="{{ action('HomeController@showLoginForm') }}">Login</a></li>
           </ul>
       @endif  
-      <form class="navbar-form navbar-right" role="search">
+      <form action="{{{ action('PostsController@index') }}}" class="navbar-form navbar-right" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" action="{{{ action('PostsController@index') }}}">
+          <input name="q" type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> 
