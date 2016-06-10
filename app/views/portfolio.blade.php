@@ -35,7 +35,7 @@
      </div>
     <!-- _________________________________________________________________________________________________ -->
     <div id= "projects" class="col-md-12 text-center">     
-        <h1><a href="#top" >Projects</h1></a>
+        <h1><a href="#top" id="pro" >Projects</h1></a>
             <br><a href="/simplesimon" target="_blank" class="sites">Simple Simon<a></br>
             <br><a href="/calculator"target="_blank" class="sites">Calculator</br>
             <br><a href="/posts"target="_blank" class="sites">Blog</br>
