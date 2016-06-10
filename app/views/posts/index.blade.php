@@ -51,16 +51,11 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
 
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" action="{{{ action('PostsController@index') }}}">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> 
+    
       <!-- this needs work -->
 
 
-       @if(Auth::check())
+      @if(Auth::check())
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
           </ul>
@@ -68,7 +63,13 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ action('HomeController@showLoginForm') }}">Login</a></li>
           </ul>
-      @endif
+      @endif  
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" action="{{{ action('PostsController@index') }}}">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> 
     </div>
   </div>
 </nav>
