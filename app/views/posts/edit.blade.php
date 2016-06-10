@@ -29,6 +29,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+          <li class="active"><a href="/posts">All Posts<span class="sr-only"></span></a></li>
           <li><a href="{{ action('PostsController@create') }}">Create a post</a></li>
         <li class="active"><a href="">Editing: {{{ $post->title }}}<span class="sr-only"></span></a></li>
         </li>
