@@ -84,6 +84,10 @@ h1 {
         text-decoration: none;
     }
 
+    .sites:active{
+    color: (42,122,187);
+    text-decoration: none;
+    }
 #contact {
     text-align: center;
     /*padding-top: 60px;*/
