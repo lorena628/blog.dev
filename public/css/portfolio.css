@@ -84,7 +84,7 @@ h1 {
         text-decoration: none;
     }
 
-    .sites:active{
+    a:active{
     color: (42,122,187);
     text-decoration: none;
     }
