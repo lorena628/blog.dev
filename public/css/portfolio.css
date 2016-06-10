@@ -97,12 +97,15 @@ h1 {
 #contact {
     text-align: center;
     /*padding-top: 60px;*/
-    padding-bottom: 20%;
+    padding-bottom: 15%;
 /*    background-color: black;
     color: white;*/
 }
 p{
     font-size: 2em;
+}
+#information{
+    padding-top: 2em;
 }
     #git,#lin{
         color: black;
