@@ -4,6 +4,8 @@
     <link rel="icon" href="/img/LM.png">
 
     <title>lorenamarie</title>
+
+    <meta name="viewport" content="width=device-width">
     <!-- google fonts -->
    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
    <!-- font awesomes -->
