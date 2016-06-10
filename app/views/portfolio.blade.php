@@ -48,8 +48,9 @@
     <!-- _________________________________________________________________________________________________ -->
     <div id= "contact" class="col-md-12 text-center">     
         <h1>Contact Me</h1>
-        <p>Email: lorena.villanueva\@yahoo.com</p>
-        
+        <p>lorena.villanueva@yahoo.com</p>
+        <p>210.897.1591</p>
+
 
         <a href="https://github.com/lorena628" target="_blank"><i class="fa fa-github fa-3x" id="git" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/pub/lorena-villanueva/a1/46a/a28" target="_blank"><i class="fa fa-linkedin fa-3x" id="lin" aria-hidden="true"></i></a>
