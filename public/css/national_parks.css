@@ -30,6 +30,9 @@ th {
     /*padding-bottom: 9.12%;*/
     font-size: 1.8em;
 }
+    #links:visited{
+        color: pink;
+    }
 .fa-arrow-right, .fa-arrow-left{
     color:white;
 }
