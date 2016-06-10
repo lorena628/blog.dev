@@ -64,6 +64,11 @@ h1 {
 }
     #pro{
         color: white;
+        text-decoration: none;
+    }
+    #pro:visited{
+        text-decoration: none;
+        color:white;
     }
     .sites{
         font-size: 1.8em;
