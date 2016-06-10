@@ -39,6 +39,7 @@
             <br><a href="/simplesimon" target="_blank" class="sites">Simple Simon<a></br>
             <br><a href="/calculator"target="_blank" class="sites">Calculator</br>
             <br><a href="/posts"target="_blank" class="sites">Blog</br>
+            <br><a href="/weathermap"target="_blank" class="sites">3 Day Weather Map</br>
             <br><a href="http://adlister.lorenamarie.xyz/" target="_blank" class="sites">Adlister</br>
             <br><a href="http://nationalparks.lorenamarie.xyz/" target="_blank" class="sites">National Parks Database</br> 
             <!-- <br>Adlister</br>  -->
