@@ -86,7 +86,7 @@ h1 {
     }
 
 a:hover {
-    color: rgb(51,51,51);
+    color: #D24451;
     text-decoration: none;
 }
 
@@ -95,6 +95,7 @@ a:active {
 }
 a:visited {
    color: rgb(42,122,187);
+   text-decoration: none;
 }
 
 
