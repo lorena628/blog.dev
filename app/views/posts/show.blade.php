@@ -2,7 +2,7 @@
 
 @section('topscript')
 <link rel="icon" href="/img/LM.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/css/showpost.css">
 @stop
