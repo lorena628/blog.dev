@@ -73,20 +73,20 @@ h1 {
     .sites{
         font-size: 1.8em;
         color: (51,51,51); 
-        text-decoration: none;
+        text-decoration-style: none;
     }
     .sites:hover{
         color: #D24451;
-        text-decoration: none;
+     text-decoration-style: none;
     }
     .sites:visited{
         color: (42,122,187);
-        text-decoration: none;
+        text-decoration-style: none;
     }
 
     a:active{
     color: (42,122,187);
-    text-decoration: none;
+    text-decoration-style: none;
     }
 #contact {
     text-align: center;
