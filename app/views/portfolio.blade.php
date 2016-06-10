@@ -15,8 +15,6 @@
 @stop
 
 
-
-
 @section('body')
 <a href="top"></a>
   
@@ -55,16 +53,6 @@
     </div> 
     <!-- _________________________________________________________________________________________________ -->
 
-
-<!-- 
-<!-- <form action="MAILTO:someone@example.com" method="post" enctype="text/plain"><br>
-<input type="text" name="name" value="your name"><br><br>
-<input type="text" name="mail" value="your email"><br>
-<br>
-<input type="text" name="comment" value="your comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
 
 
 
