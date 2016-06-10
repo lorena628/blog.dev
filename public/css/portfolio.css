@@ -72,9 +72,11 @@ h1 {
     }
     .sites:hover{
         color: #D24451;
+        text-decoration: none;
     }
     .sites:visited{
         color: (42,122,187);
+        text-decoration: none;
     }
 
 #contact {
