@@ -76,7 +76,10 @@ h1 {
     color: white;*/
 }
     #git,#lin{
-        color: black
+        color: black;
+    }
+    #git{
+        padding-right: 1em;
     }
 
 a:hover {
