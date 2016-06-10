@@ -23,7 +23,7 @@ class PostsController extends \BaseController {
             $searchTerm = Input::get('q');
             $posts = Post::where('title', 'like', "%{$searchTerm}%")->paginate(4);
         } else {
-            $posts = Post::with('user')->orderBy('title')->paginate(4);
+            $posts = Post::with('user')->orderBy('timpestamps')->paginate(4);
         }
 
         return View::make('posts.index')->with('posts', $posts);
