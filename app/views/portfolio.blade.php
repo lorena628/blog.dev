@@ -22,7 +22,7 @@
   
 
     <div id="cover_pic">
-        <div class="bns">
+        <div class="bns data-role="header" data-position="fixed"">
             <input type="button" id="btn" onclick="location.href='#projects';" value="Projects" />
             <input type="button" id="btn" onclick="location.href='/posts';" value="Blog" />
             <input type="button" id="btn" onclick="location.href='#';" value=" Contact" />    
