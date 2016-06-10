@@ -21,14 +21,25 @@
 <a href="top"></a>
   
 
-    <div id="cover_pic">
-        <div class="bns data-role="header" data-position="fixed"">
-            <input type="button" id="btn" onclick="location.href='#projects';" value="Projects" />
-            <input type="button" id="btn" onclick="location.href='/posts';" value="Blog" />
-            <input type="button" id="btn" onclick="location.href='#';" value=" Contact" />    
-        </div>
-        <h1> Lorena Villanueva</h1>
+
+<div class="navbar">
+  <nav>
+    <div class="nav-wrapper">
+      <!-- <a href="#!" class="brand-logo">Logo</a> -->
+      <ul class="right hide-on-med-and-down">
+          <div id="cover_pic">
+                <div class="bns">
+                <input type="button" id="btn" onclick="location.href='#projects';" value="Projects" />
+                <input type="button" id="btn" onclick="location.href='/posts';" value="Blog" />
+                <input type="button" id="btn" onclick="location.href='#';" value=" Contact" />  
+                </div>
+            </div>  
+      </ul>
+          <h1> Lorena Villanueva</h1>
     </div>
+  </nav>
+</div>
+
 
     <!-- _________________________________________________________________________________________________ -->
     <div id= "about_me" class="col-md-12 text-center">     
