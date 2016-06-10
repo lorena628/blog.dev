@@ -39,8 +39,8 @@ h1 {
     padding-top: 10%;
     padding-bottom: 30%;
     border-bottom-style: solid;
-    border-color: gray;
-    border-width: 1px;
+/*    border-color: gray;
+    border-width: 1px;*/
     font-size-adjust: .60em;
     background-color: black;
     color: white;
@@ -57,8 +57,8 @@ h1 {
     padding-top: 60px;
     padding-bottom: 30%;
     border-bottom-style: solid;
-    border-color: gray;
-    border-width: 1px;
+ /*   border-color: gray;
+    border-width: 1px;*/
     background-color: black;
     color: white;
 }
@@ -79,7 +79,7 @@ h1 {
         color: black;
     }
     #git{
-        padding-right: 4em;
+        padding-right: 2em;
     }
 
 a:hover {
