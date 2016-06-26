@@ -106,8 +106,8 @@ p{
 }
 #information{
     padding-top: 2em;
-    border-left-color: black;
-    border-width: 2px;
+    border-color: black;
+    border-width: 1px;
 }
     #git,#lin{
         color: black;

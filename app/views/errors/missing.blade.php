@@ -28,7 +28,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <h1>404<h1>
 <h2>Not Found.</h2>
-
+<h3>enjoy this picture of of me doing child labor</h3>
+<img src="/img/childlabor.jpeg">
 
 <a href="/">Take me home</a>
 @stop

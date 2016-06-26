@@ -59,12 +59,12 @@
                         {{ $errors->first('password', '<span class="help-block">:message</span>') }}
                     {{ Form::label('password', 'Password', array('class' => 'sr-only')) }}
                     {{ Form::password('password', array('class'=>'form-control', 'placeholder'=>'Password', 'id'=>'pass-field')) }}
+                    <div id="button">
+                        <input class="btn btn-success" id="btn_sub"  type="submit" value="Login">
+                    </div>
                 </div>
             </div>
 
-                <div id="button">
-                    <input class="btn btn-success" id="btn_sub"  type="submit" value="Login">
-                </div>
             {{ Form::close() }}
     </div>
 </div>
