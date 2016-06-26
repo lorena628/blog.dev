@@ -17,7 +17,6 @@
             font-size: 3em;
             color: white;
             text-align: center;
-            margin-bottom: 8em;
         }
  
 </style>
@@ -31,6 +30,6 @@
 <h3>enjoy this picture of of me doing child labor</h3>
 <img src="/img/childlabor.jpeg">
 
-<a href="/">Take me home</a>
+<p><a href="/">Take me home</a></p>
 @stop
 
