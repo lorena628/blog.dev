@@ -43,12 +43,12 @@
             <br><a href="http://adlister.lorenamarie.xyz/" target="_blank" class="sites">Adlister</br>
             <br><a href="http://nationalparks.lorenamarie.xyz/" target="_blank" class="sites">National Parks Database</br> 
             <br><a href="http://yourfamilyapp.xyz/"target="_blank" class="sites">yourfamilyapp.xyz</br>     
-            <br><a href="https://github.com/FamilyDot/FamilyDot"target="_blank" class="sites">yourfamilyapp.xyz(repository)</br>
+            <br><a href="https://github.com/FamilyDot/FamilyDot"target="_blank" class="sites">yourfamilyapp.xyz (repository)</br>
             <br><a href="https://github.com/lorena628/blog.dev" target="_blank" class="sites">lorenamarie.xyz</a></br>
     </div>   
     <!-- _________________________________________________________________________________________________ -->
     <div id= "contact" class="col-md-12 text-center">     
-        <h1><a href="#top">Contact Me</h1></a>
+        <h1>Contact Me</h1>
         <div id="information">
             <p>lorena.villanueva@yahoo.com</p>
             <p>210.897.1591</p>
