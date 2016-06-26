@@ -109,10 +109,10 @@ p{
     border-color: black;
     border-width: 1px;
 }
-    #git,#lin{
+    #git,#lin,#twit{
         color: black;
     }
-    #git{
+    #git,#twit{
         padding-right: 2em;
     }
 
