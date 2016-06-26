@@ -42,7 +42,8 @@
             <br><a href="/weathermap"target="_blank" class="sites">3 Day Weather Map</br>
             <br><a href="http://adlister.lorenamarie.xyz/" target="_blank" class="sites">Adlister</br>
             <br><a href="http://nationalparks.lorenamarie.xyz/" target="_blank" class="sites">National Parks Database</br> 
-            <!-- <br>Adlister</br>  -->
+            <br><a href="http://yourfamilyapp.xyz/"target="_blank" class="sites">yourfamilyapp.xyz</br>     
+            <br><a href="https://github.com/FamilyDot/FamilyDot"target="_blank" class="sites">yourfamilyapp.xyz(repository)</br>
             <br><a href="https://github.com/lorena628/blog.dev" target="_blank" class="sites">lorenamarie.xyz</a></br>
     </div>   
     <!-- _________________________________________________________________________________________________ -->
@@ -53,6 +54,7 @@
             <p>210.897.1591</p>
         </div>
 
+        <a href="https://twitter.com/newvillage210" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
         <a href="https://github.com/lorena628" target="_blank"><i class="fa fa-github fa-3x" id="git" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/pub/lorena-villanueva/a1/46a/a28" target="_blank"><i class="fa fa-linkedin fa-3x" id="lin" aria-hidden="true"></i></a>
     </div> 
