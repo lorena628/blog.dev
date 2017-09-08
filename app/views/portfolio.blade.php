@@ -31,7 +31,7 @@
     <!-- _________________________________________________________________________________________________ -->
     <div id= "about_me" class="col-md-12 text-center">     
         <h1 id="about">About Me</h1>
-        <p id="about_des">Currently located in San Antonio, Texas as a Systems Developer.</p>
+        <p id="about_des">Just a small town girl... with braces</p>
      </div>
     <!-- _________________________________________________________________________________________________ -->
     <div id= "projects" class="col-md-12 text-center">     
