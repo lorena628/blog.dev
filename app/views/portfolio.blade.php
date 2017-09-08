@@ -31,16 +31,16 @@
     <!-- _________________________________________________________________________________________________ -->
     <div id= "about_me" class="col-md-12 text-center">     
         <h1 id="about">About Me</h1>
-        <p id="about_des">Full stack developer from Texas. I have a diverse set of skills that include HTML/CSS/Javascript/JQuery/PHP/MySQL/Laravel</p>
+        <p id="about_des">Currently located in San Antonio, Texas as a Systems Developer.</p>
      </div>
     <!-- _________________________________________________________________________________________________ -->
     <div id= "projects" class="col-md-12 text-center">     
         <h1><a href="#top" id="pro" >Projects</h1></a>
             <br><a href="/simplesimon" target="_blank" class="sites">Simple Simon<a></br>
-            <br><a href="/calculator"target="_blank" class="sites">Calculator</br>
-            <br><a href="/posts"target="_blank" class="sites">Blog</br>
+            {{-- <br><a href="/calculator"target="_blank" class="sites">Calculator</br> --}}
+            {{-- <br><a href="/posts"target="_blank" class="sites">Blog</br> --}}
             <br><a href="/weathermap"target="_blank" class="sites">3 Day Weather Map</br>
-            <br><a href="http://adlister.lorenamarie.xyz/" target="_blank" class="sites">Adlister</br>
+            {{-- <br><a href="http://adlister.lorenamarie.xyz/" target="_blank" class="sites">Adlister</br> --}}
             <br><a href="http://nationalparks.lorenamarie.xyz/" target="_blank" class="sites">National Parks Database</br> 
             <br><a href="http://yourfamilyapp.xyz/"target="_blank" class="sites">yourfamilyapp.xyz</br>     
             <br><a href="https://github.com/FamilyDot/FamilyDot"target="_blank" class="sites">yourfamilyapp.xyz (repository)</br>
@@ -54,7 +54,7 @@
             <p>210.897.1591</p>
         </div>
 
-        <a href="https://twitter.com/newvillage210" target="_blank"><i class="fa fa-twitter fa-3x" id="twit" aria-hidden="true"></i></a>
+        {{-- <a href="https://twitter.com/newvillage210" target="_blank"><i class="fa fa-twitter fa-3x" id="twit" aria-hidden="true"></i></a> --}}
         <a href="https://github.com/lorena628" target="_blank"><i class="fa fa-github fa-3x" id="git" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/pub/lorena-villanueva/a1/46a/a28" target="_blank"><i class="fa fa-linkedin fa-3x" id="lin" aria-hidden="true"></i></a>
     </div> 
